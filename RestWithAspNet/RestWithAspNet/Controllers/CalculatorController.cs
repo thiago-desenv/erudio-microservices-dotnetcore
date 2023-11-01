@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Globalization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -30,12 +28,19 @@ namespace RestWithAspNet.Controllers
             return BadRequest("Invalid input");
         }
 
-        private int ConvertToDecimal(string firstNumber)
+        private bool IsNumeric(string value)
         {
-            throw new NotImplementedException();
+            double number;
+            bool isNumber = double.TryParse(
+                value, 
+                NumberStyles.Any, 
+                NumberFormatInfo.InvariantInfo, 
+                out number);
+
+            return isNumber;
         }
 
-        private bool IsNumeric(string firstNumber)
+        private int ConvertToDecimal(string value)
         {
             throw new NotImplementedException();
         }
