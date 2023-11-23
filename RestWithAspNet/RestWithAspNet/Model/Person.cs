@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RestWithAspNet.Controllers.Model
+namespace RestWithAspNet.Model
 {
     public class Person
     {

@@ -1,4 +1,4 @@
-﻿using RestWithAspNet.Controllers.Model;
+﻿using RestWithAspNet.Model;
 using System.Collections.Generic;
 
 namespace RestWithAspNet.Services
