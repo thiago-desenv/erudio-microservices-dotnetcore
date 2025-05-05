@@ -52,8 +52,8 @@ namespace RestWithAspNet.Services.Implementations
             {
                 Id = IncrementAndGet(),
                 FirstName = "Abacaxi" + i,
-                LastName = "Abacaxizeiro",
-                Address = "São paulo - Guarulho - Brasil",
+                LastName = "Abacaxizeiro" + i,
+                Address = "São paulo - Guarulho - Brasil" + i,
                 Gender = 'F'
             };
         }
